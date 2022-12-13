@@ -4,19 +4,21 @@
 // @version      0.1
 // @description  Because clicking all links is annoying.
 // @author       ResamVi (Julien Midedji)
-// @match        https://feed.resamvi.io
+// @match        https://feed.resamvi.io/*
 // @grant        none
 // ==/UserScript==
 
 (function() {
     'use strict';
-	//
+
+	console.log("[FreshRSS to YT-Playlist active]");
+
 	// Create button
 	const btn = document.createElement("button");
-	btn.innerHTML = "Hello Button";
+	btn.innerHTML = "To Playlist";
 
 	// When button is clicked
-	btn.onclick = () => { 
+	btn.onclick = () => {
 		console.log("Hello");
 
 		// Get all items's links in list
@@ -27,10 +29,12 @@
 		elements.forEach((element, index) => {
 			if(index % 2 == 0) return; // idk why they show twice
 			videos.push(element.href.split("=")[1]);
+            console.log(element.href.split("=")[1]);
 		});
 
 		// And create a playlist
 		let url = "http://www.youtube.com/watch_videos?video_ids=" + videos.join(",");
+        console.log(url);
 
 		// That we open in a new tab
 		window.open(url, '_blank').focus();
@@ -45,3 +49,4 @@
 	const header = document.getElementsByClassName("header")[0];
 	header.appendChild(div);
 })();
+Br
