@@ -1,0 +1,24 @@
+/home/julien/scripts/download-all/target/debug/deps/ureq-c4a352e03d8a9763.rmeta: /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/lib.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/agent.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/body.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/chunked/mod.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/chunked/decoder.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/chunked/encoder.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/error.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/header.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/middleware.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/pool.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/proxy.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/request.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/resolve.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/response.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/stream.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/unit.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/rtls.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/testserver.rs
+
+/home/julien/scripts/download-all/target/debug/deps/ureq-c4a352e03d8a9763.d: /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/lib.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/agent.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/body.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/chunked/mod.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/chunked/decoder.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/chunked/encoder.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/error.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/header.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/middleware.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/pool.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/proxy.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/request.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/resolve.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/response.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/stream.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/unit.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/rtls.rs /home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/testserver.rs
+
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/lib.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/agent.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/body.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/chunked/mod.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/chunked/decoder.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/chunked/encoder.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/error.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/header.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/middleware.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/pool.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/proxy.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/request.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/resolve.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/response.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/stream.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/unit.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/rtls.rs:
+/home/julien/.cargo/registry/src/github.com-1ecc6299db9ec823/ureq-2.6.2/src/testserver.rs:
+
+# env-dep:CARGO_PKG_VERSION=2.6.2
