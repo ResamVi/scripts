@@ -24,51 +24,52 @@ struct Entry {
 struct Request {
     url: String
 }
+//
+// https://v.redd.it/bfqq6lmiy2091/DASH_720.mp4
+// https://i.redd.it/ex651i5pruy81.jpg
 
 fn main() {
+    // Regex pattern for extracting file name.
     let re = Regex::new(r".+it/(\w+).+(\.\w+)").unwrap();
-    // https://v.redd.it/bfqq6lmiy2091/DASH_720.mp4
-    // https://i.redd.it/ex651i5pruy81.jpg
-    let text = "https://v.redd.it/bfqq6lmiy2091/DASH_720.mp4";
-    let caps = re.captures(text).unwrap();
-    println!("{:?}", caps.get(1).unwrap().as_str());
-    println!("{:?}", caps.get(2).unwrap().as_str());
 
-    // let response = ureq::get("https://i.redd.it/ex651i5pruy81.jpg")
-    //     .call()
-    //     .unwrap();
+    // Read our archive of requests when we looked through our stuff.
+    let foo: String = fs::read_to_string("mf.har").unwrap();
 
-    // println!("{:?}", response.headers_names());
+    // Iterate.
+    let file: HarFile = serde_json::from_str(&foo).unwrap();
+    for entry in file.log.entries {
+        let url = entry.request.url;
 
-    // let mut file = fs::File::create("test.jpg").unwrap();
-    // std::io::copy(&mut response.into_reader(), &mut file).unwrap();
+        if !url.contains("redd.it") {
+            continue;
+        }
 
+        if url.contains("DASH_audio") {
+            continue;
+        }
 
-    // let foo: String = fs::read_to_string("mf.har").unwrap();
+        if url.contains("preview") {
+            continue;
+        }
 
-    // let file: HarFile = serde_json::from_str(&foo).unwrap();
+        println!("{}", url);
 
-    // for entry in file.log.entries {
-    //     let url = entry.request.url;
+        let caps = re.captures(&url).unwrap();
 
-    //     if !url.contains("redd.it") {
-    //         continue;
-    //     }
+        let filename = caps.get(1).unwrap().as_str();
+        let filetype = caps.get(2).unwrap().as_str();
 
-    //     if url.contains("DASH_audio") {
-    //         continue;
-    //     }
+        let fullname = format!("{}{}", filename, filetype);
 
-    //     if url.contains("preview") {
-    //         continue;
-    //     }
+        let response = ureq::get(url.as_str())
+            .call();
 
-    //     println!("{}", url);
+        let response = match response {
+            Ok(r) => r,
+            Err(_) => continue
+        };
 
-    //     let (_, filename) = url.split_once(".it/");
-
-        // let response = ureq::get("http://example.com")
-        //     .call()
-        //     .unwrap();
-    // }
+        let mut file = fs::File::create(fullname).unwrap();
+        std::io::copy(&mut response.into_reader(), &mut file).unwrap();
+    }
 }
